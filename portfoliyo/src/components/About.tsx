@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 function About() {
     return (
-        <section className="bg-zinc-950 text-white px-8 md:px-16 py24">
+        <section className="bg-zinc-950 text-white px-8 md:px-16 py-24">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} viewport={{ once: true }} className="text-center mb-16">
-                <p className="text-purple-400 text-lg mb-4">
+                <p className="text-purple-400 text-lg mb-4 ">
                     About Me
                 </p>
 
