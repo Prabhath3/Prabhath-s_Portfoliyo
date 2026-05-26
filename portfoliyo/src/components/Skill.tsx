@@ -147,22 +147,22 @@ export default function Skill() {
 
   const filtered = active === ALL ? SKILLS_DATA : SKILLS_DATA.filter((s) => s.category === active);
   return (
-    <section id="Skill" className="py-28 px-6 max-w-10xl mx-auto bg-zinc-950 " aria-label="Skills" >
-      <div className="mb-14">
+    <section id="Skill" className="py-16 px-6 max-w-10xl mx-auto bg-zinc-950 text-center " aria-label="Skills" >
+      <div className="mb-14" >
         <span className="text-[11px] font-mono tracking-[0.15em] text-gray-400 dark:text-gray-400 uppercase">
           02 &nbsp;/&nbsp; skills
         </span>
         <h2 className="mt-3 text-5xl font-bold tracking-tight text-white dark:text-gray-500 leading-tight">
           What I build&nbsp; Skills
         </h2>
-        <p className="mt-3 text-gray-400 dark:text-gray-400 max-w-lg">
+        <p className="mt-3 text-gray-400  dark:text-gray-400 ">
           Technologies I reach for day-to-day - sorted by category, rated by real-world usage
         </p>
       </div>
       <div
         role="tablist"
         aria-label="Skill categories"
-        className="flex flex-wrap gap-2 mb-12"
+        className="flex flex-wrap gap-2 mb-12 "
       >
         {TABS.map((tab) => {
           const isActive = tab === active;
@@ -173,7 +173,7 @@ export default function Skill() {
               role="tab"
               aria-selected={isActive}
               onClick={() => setActive(tab)}
-              className={`px-4 py-1.5 text-[13px] rounded-full border transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${isActive
+              className={`m-auto px-4 py-1.5 text-[13px] rounded-full border transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${isActive
                 ? "border-transparent text-white dark:text-gray-900 font-medium"
                 : "border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-gray-400 dark:hover:border-gray-500 bg-transparent"
                 }`}
