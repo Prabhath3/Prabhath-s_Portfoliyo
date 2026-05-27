@@ -74,6 +74,7 @@ const SKILLS_DATA = [
   },
 ];
 
+{/*Animation part */}
 const ALL = "All";
 const TABS = [ALL, ...SKILLS_DATA.map((s) => s.category)];
 
