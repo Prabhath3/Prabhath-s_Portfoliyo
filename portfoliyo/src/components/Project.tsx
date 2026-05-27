@@ -65,28 +65,29 @@ function Projects() {
     }, [projects]);
 
     const getPosition = (index: number) => {
-        const angle = (index - activeIndex) * 60;
-        const radius = 250;
+        const isMobile = window.innerWidth < 768;
+        const angle = (index - activeIndex) * (isMobile ? 90 : 60);
+        const radius = isMobile ? 120 : 250;
 
         const x = Math.sin((angle * Math.PI) / 180) * radius;
-        const scale = index === activeIndex ? 1.2 : 0.8;
-        const opacity = index === activeIndex ? 1 : 0.5;
+        const scale = index === activeIndex ? 1 : 0.7;
+        const opacity = index === activeIndex ? 1 : 0.3;
         const zIndex = index === activeIndex ? 10 : 0;
 
         return { x, scale, opacity, zIndex };
     };
 
     return (
-        <section id="Projects" className="bg-zinc-950 text-white px-8  md:px-16 py-24">
-            <div className="mb-16">
+        <section id="Project" className="bg-zinc-950 text-white px-4  sm:px-8 md:px-16 py-24 overflow-x-hidden">
+            <div className="mb-16 text-canter md:text-left">
                 <p className="text-purple-400 text-lg mb-4">
                     Projects
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold">
                     My Github Projects
                 </h2>
-                <div className="relative h-[500px] flex items-center justify-center">
-                    <div className="absolute w-96 h-96 bg-purple-500 blur-3xl opacity-20 rounded-full"></div>
+                <div className="relative h-[500px] flex items-center justify-center md:mt-0">
+                    <div className="absolute w-96 h-96 md:w-96 md:h-96 bg-purple-500 blur-3xl opacity-20 rounded-full"></div>
                     {projects.slice(0, 6).map((repo, index) => {
                         const { x, scale, opacity, zIndex } = getPosition(index);
 
@@ -95,12 +96,12 @@ function Projects() {
                                 <img
                                     src={getProjectImage(repo)}
                                     alt={repo.name}
-                                    className="w-full h-40 object-cover rounded-xl mb-4 hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-32 md:h-40 object-cover rounded-xl mb-4 hover:scale-105 transition-transform duration-300"
                                 />
-                                <h3 className="text-xl font-bold text-purple-400 mb-2">
+                                <h3 className="text-xl md:text-xl font-bold text-purple-400 mb-2">
                                     {repo.name}
                                 </h3>
-                                <p className="text-gray-400 mb-4">
+                                <p className="text-gray-400 mb-4 text-sm h-10 overflow-hidden">
                                     {repo.description || "No description available"}
                                 </p>
                                 <p className="text-sm text-gray-500 mb-4">
