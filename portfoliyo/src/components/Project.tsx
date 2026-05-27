@@ -19,8 +19,17 @@ function Projects(){
     }, []);
 
     return(
-        <section>
-            
+        <section id="Projects">
+            <div>
+                <p>
+                    Projects
+                </p>
+                <h2>
+                    My Github Projects
+                </h2>
+            </div>
         </section>
-    )
+    );
 }
+
+export default Projects;
