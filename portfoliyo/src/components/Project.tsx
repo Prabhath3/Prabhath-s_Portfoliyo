@@ -16,8 +16,8 @@ function Projects() {
     const getProjectImage = (repo: any) => {
         const text = (repo.name + " " + (repo.description || "")).toLowerCase();
 
-        if (text.includes("ai") || text.includes("machine learning")) {
-            return "/images/ai.png";
+        if (text.includes("AI") || text.includes("machine learning")) {
+            return "/images/AI.webp";
         }
 
         if (text.includes("class") || text.includes("pin")) {
