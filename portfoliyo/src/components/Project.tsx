@@ -20,12 +20,12 @@ function Projects() {
             return "/images/ai.png";
         }
 
-        if (text.includes("chat") || text.includes("bot")) {
-            return "/images/chatbot.png";
+        if (text.includes("class") || text.includes("pin")) {
+            return "/images/education.webp";
         }
 
-        if (text.includes("ecommerce") || text.includes("shop")) {
-            return "/images/ecommerce.webp";
+        if (text.includes("ecommarce") || text.includes("employee")) {
+            return "/images/ecommarce.webp";
         }
 
         if (text.includes("robot") || text.includes("robotics")) {

@@ -8,7 +8,7 @@ function Header() {
                     <ul className="flex gap-6 text-gray-300">
                         <li className="cursor-pointer hover:text-purple-400 transition-all duration-300" ><a href="#About">About</a></li>
                         <li className="cursor-pointer hover:text-purple-400 transition-all duration-300"><a href="#Skill">Skill</a></li>
-                        <li className="cursor-pointer hover:text-purple-400 transition-all duration-300">Projects</li>
+                        <li className="cursor-pointer hover:text-purple-400 transition-all duration-300"><a href="#Projects">Projects</a></li>
                         <li className="cursor-pointer hover:text-purple-400 transition-all duration-300">Contact US</li>
 
                     </ul>
