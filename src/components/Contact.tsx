@@ -65,8 +65,55 @@ function Contact() {
                     className="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 transition-all duration-300" />
                 <textarea name="message" placeholder="Your message" rows={6} required
                     className="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 resize-none " />
-                <button type="submit" className="bg-purple-500 hover:bg-purple-400 transition-all duratio-300 py-4 rounded-xl font-semibold text-lg"> Send Message </button>
+                <button type="submit" disabled={loading} className="bg-purple-500 hover:bg-purple-400 transition-all duratio-300 py-4 rounded-xl font-semibold text-lg"> Send Message </button>
+
+                {
+                    isSent && (
+                        <div className="text-center text-green-400 font-medium">
+                            ✅ Message sent successfully!
+                        </div>
+                    )
+
+                }
+
+                {error && (
+                    <div className="text-center text-red-400 font-medium">
+                        {error}
+                    </div>
+                )}
             </motion.form>
+            <div className="mt-16 text-center">
+                <p className="text-gray-400">
+                    You can also reach me via:
+                </p>
+
+                <div className="flex justify-center gap-6 mt-4 flex-wrap">
+                    <a
+                        href="mailto:prabhathnishatha130@gmail.com"
+                        className="text-purple-400 hover:text-purple-300 transition"
+                    >
+                        Email
+                    </a>
+
+                    <a
+                        href="https://github.com/prabhath3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:text-purple-300 transition"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/prabhath-nishantha-ab553a334/?skipRedirect=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:text-purple-300 transition"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
         </section>
     );
 }
