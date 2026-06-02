@@ -79,7 +79,7 @@ function Projects() {
 
     return (
         <section id="Project" className="bg-zinc-950 text-white px-4  sm:px-8 md:px-16 py-24 overflow-x-hidden">
-            <div className="mb-16 text-canter md:text-left">
+            <div className=" text-canter md:text-left">
                 <p className="text-purple-400 text-lg mb-4">
                     Projects
                 </p>
