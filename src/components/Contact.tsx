@@ -34,7 +34,12 @@ function Contact(){
                     Let's Work Togather
                 </h2>
             </div>
-            
+            <motion.div>
+                <input type="text" name="user_name" placeholder="Your name" required/>
+                <input type="email" name="user_email" placeholder="Your Email" required/>
+                <textarea name="message" placeholder="Your message" rows={6} required/>
+                <button type="submit"> Send Message </button>
+            </motion.div>
         </section>
     );
 }
