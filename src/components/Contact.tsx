@@ -36,7 +36,12 @@ function Contact() {
                     Let's Work Togather
                 </h2>
             </div>
-            <motion.div
+            <motion.form
+                ref={form}
+                onSubmit={sendEmail}
+                initial={{opacity:0, y: 40}}
+                whileInView={{opacity:1, y:0}}
+                transition={{duration:0.8}}
                 className="max-w-3xl max-auto flex flex-col gap-6">
                 <input type="text" name="user_name" placeholder="Your name" required
                     className="bg-zinc-900 border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 transition-all" />
@@ -45,7 +50,7 @@ function Contact() {
                 <textarea name="message" placeholder="Your message" rows={6} required 
                     className="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 resize-none " />
                 <button type="submit" className="bg-purple-500 hover:bg-purple-400 transition-all duratio-300 py-4 rounded-xl font-semibold text-lg"> Send Message </button>
-            </motion.div>
+            </motion.form>
         </section>
     );
 }
