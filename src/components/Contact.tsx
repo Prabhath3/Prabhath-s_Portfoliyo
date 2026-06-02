@@ -36,11 +36,15 @@ function Contact() {
                     Let's Work Togather
                 </h2>
             </div>
-            <motion.div>
-                <input type="text" name="user_name" placeholder="Your name" required />
-                <input type="email" name="user_email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your message" rows={6} required />
-                <button type="submit"> Send Message </button>
+            <motion.div
+                className="max-w-3xl max-auto flex flex-col gap-6">
+                <input type="text" name="user_name" placeholder="Your name" required
+                    className="bg-zinc-900 border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 transition-all" />
+                <input type="email" name="user_email" placeholder="Your Email" required
+                    className="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 trnasition-all" />
+                <textarea name="message" placeholder="Your message" rows={6} required 
+                    className="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-4 outline-none focus:border-purple-500 resize-none " />
+                <button type="submit" className="bg-purple-500 hover:bg-purple-400 transition-all duratio-300 py-4 rounded-xl font-semibold text-lg"> Send Message </button>
             </motion.div>
         </section>
     );
