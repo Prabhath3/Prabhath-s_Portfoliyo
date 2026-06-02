@@ -1,33 +1,44 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+
 
 
 function Contact() {
     const form = useRef<HTMLFormElement>(null);
 
-    const sendEmail = (e: React.FormEvent) => {
+    const [loading, setLoading] = useState(false);
+    const [isSent, setIsSent] = useState(false);
+    const [error, setError] = useState("");
+
+
+    const sendEmail = async (e: React.FormEvent) => {
         e.preventDefault();
 
         if (!form.current) return;
 
-        emailjs
-            .sendForm(
+        setLoading(true);
+        setError("");
+        setIsSent(false);
+
+        try {
+            await emailjs.sendForm(
                 "service_kj5oll7",
                 "template_ary159m",
                 form.current,
                 {
                     publicKey: "OXWQzb453jsJLHu9H"
                 }
-            )
-            .then(() => {
-                alert("Message sent successfully");
-            })
-            .catch((error) => {
-                console.error("EmailJS Error:", error);
-                alert("Failed to send message");
-            });
-
+            );
+            alert("Message send successfully!");
+            setIsSent(true);
+            form.current.reset();
+        } catch (err) {
+            console.error(err);
+            setError("Failed to send message. Please try again");
+        } finally {
+            setLoading(false);
+        }
     };
     return (
         <section
