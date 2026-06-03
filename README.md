@@ -1,4 +1,4 @@
-# 🚀 Prabhath's Portfolio
+# 🚀 Prabhath's Portfolio V2.0
 
 A modern, responsive developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
