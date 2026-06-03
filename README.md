@@ -1,27 +1,30 @@
 # 🚀 Prabhath's Portfolio V2.0
 
-A modern, responsive developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion.
+A modern, responsive, and interactive developer portfolio built with **React, TypeScript, Tailwind CSS, Framer Motion, and Vite**.
 
-Designed to showcase my projects, skills, achievements, and passion for AI, Robotics, and Software Engineering.
+This portfolio showcases my projects, technical skills, achievements, and passion for **Artificial Intelligence, Robotics, and Software Engineering**.
 
 ---
 
 ## 🌐 Live Demo
 
-Coming Soon...
+### ✨ Explore My Digital Universe
+
+🔗 https://prabhath-s-portfoliyo.vercel.app/
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- 🎨 Modern UI/UX Design
-- 📱 Fully Responsive Layout
-- ⚡ Built with React + TypeScript
-- 🎭 Smooth Animations using Framer Motion
-- 🎯 Dynamic GitHub Project Integration
-- 📧 Contact Form with EmailJS
-- 🌙 Charcoal Black + Purple Theme
-- 🚀 Fast Performance with Vite
+* 🎨 Modern and Professional UI/UX
+* 📱 Fully Responsive Across All Devices
+* ⚡ Powered by React + TypeScript
+* 🎭 Smooth Animations with Framer Motion
+* 📂 Dynamic GitHub Project Integration
+* 📧 Contact Form using EmailJS
+* 🌙 Premium Charcoal Black & Purple Theme
+* 🚀 Optimized Performance with Vite
+* 🔥 Clean Component-Based Architecture
 
 ---
 
@@ -29,16 +32,20 @@ Coming Soon...
 
 ### Frontend
 
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Vite
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Vite
 
-### Services
+### Services & APIs
 
-- EmailJS
-- GitHub API
+* EmailJS
+* GitHub API
+
+### Deployment
+
+* Vercel
 
 ---
 
@@ -53,6 +60,7 @@ src/
 │   ├── About.tsx
 │   ├── Projects.tsx
 │   ├── Contact.tsx
+│   └── Footer.tsx
 │
 ├── App.tsx
 ├── main.tsx
@@ -64,31 +72,31 @@ src/
 
 ## 🚀 Getting Started
 
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Prabhath-s_Portfoliyo.git
+git clone https://github.com/prabhath3/Prabhath-s_Portfoliyo.git
 ```
 
-### Navigate to Project
+### 2. Navigate to the Project Directory
 
 ```bash
 cd Prabhath-s_Portfoliyo
 ```
 
-### Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Run Development Server
+### 4. Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Open:
+The application will run on:
 
 ```bash
 http://localhost:5173
@@ -96,11 +104,11 @@ http://localhost:5173
 
 ---
 
-## 📧 Contact Form
+## 📧 Contact Form Setup
 
-The portfolio uses EmailJS to send messages directly from the website without requiring a backend server.
+This portfolio uses **EmailJS** to send messages directly from the frontend without requiring a backend server.
 
-Configure your EmailJS credentials:
+Create a `.env` file and add:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=
@@ -110,23 +118,23 @@ VITE_EMAILJS_PUBLIC_KEY=
 
 ---
 
-## 🎯 Sections
+## 🎯 Portfolio Sections
 
-### Hero
+### 🏠 Hero Section
 
-Introduction and personal branding.
+Personal branding and introduction.
 
-### About
+### 👨‍💻 About Me
 
-Overview of my background, goals, and interests.
+Background, education, interests, and goals.
 
-### Projects
+### 🚀 Projects
 
-Dynamic project showcase powered by GitHub repositories.
+A dynamic showcase of my featured projects and GitHub repositories.
 
-### Contact
+### 📬 Contact
 
-Visitors can directly send messages through EmailJS.
+A direct communication channel powered by EmailJS.
 
 ---
 
@@ -134,43 +142,47 @@ Visitors can directly send messages through EmailJS.
 
 Hi, I'm **Prabhath Nishantha**.
 
-- 🤖 AI & Robotics Enthusiast
-- 💻 Software Engineer
-- 🎓 BICT (Hons) Undergraduate
-- 🚀 Co-Founder of Zatroz
+🎓 BICT (Hons) Undergraduate
+🤖 AI & Robotics Enthusiast
+💻 Software Engineering Passionate
+🚀 Co-Founder of Zatroz
 
-I enjoy building innovative software solutions that combine modern web technologies, artificial intelligence, and automation.
+I enjoy building innovative digital solutions that combine modern web technologies, artificial intelligence, automation, and creative problem-solving.
 
 ---
 
-## 📌 Future Improvements
+## 📌 Future Enhancements
 
-- Blog Section
-- Skills Visualization
-- Experience Timeline
-- Dark/Light Theme Toggle
-- Admin Dashboard
-- Project Analytics
+* 📝 Blog Section
+* 📊 Skills Visualization Dashboard
+* 📅 Experience Timeline
+* 🌗 Dark / Light Theme Toggle
+* 🛠️ Admin Dashboard
+* 📈 Project Analytics
+* 🌍 Multi-language Support
 
 ---
 
 ## 📜 License
 
-This project is open-source and available under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
 ## 🤝 Connect With Me
 
-GitHub:
+### GitHub
+
 https://github.com/prabhath3
 
-LinkedIn:
+### LinkedIn
+
 https://www.linkedin.com/in/prabhath-nishantha-ab553a334
 
-Email:
-prabhathnishantha130@gmail.com
+### Email
+
+[prabhathnishantha130@gmail.com](mailto:prabhathnishantha130@gmail.com)
 
 ---
 
-⭐ If you like this project, consider giving it a star.
+⭐ If you find this project helpful, please consider giving it a star and supporting the repository.
